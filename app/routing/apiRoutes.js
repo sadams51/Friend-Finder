@@ -36,7 +36,7 @@ function computeScore(request, response) {
 		//for each response 
 		for (var j = 0; j < userScores.length; j++) {
 			console.log(friendsArray[i].answers[j]);
-			//PROBLEM with friendsArray.answers.....
+
 			difference += (Math.abs(userScores[j] - friendsArray[i].answers[j]));
 		}
 
