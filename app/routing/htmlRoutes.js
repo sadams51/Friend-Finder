@@ -1,23 +1,17 @@
-
-
-var express = require("express");
+//dependencies 
+//path package to get file path for html 
 
 var path = require("path");
 
-var app = express.Router(); 
 
+module.exports = function(app) {
 
-function htmlRoutes(app) {
-	//get route to home page 
 	app.get("/", function(request, response) {
 		response.sendFile(path.join(__dirname, "../public/home.html"));
 	});
 
-//get route to survey page
 	app.get("/survey", function(request, response) {
-		res.sendFile(path.join(__dirname, "../public/survey.html"));
+		response.sendFile(path.join(__dirname, "../public/survey.html"));
 	});
+
 };
-
-
-module.exports = htmlRoutes;

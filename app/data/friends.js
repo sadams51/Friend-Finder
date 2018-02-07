@@ -1,4 +1,6 @@
-var friendsArray = [
+//Data below will hold all possible friends 
+
+var friends = [
 	{
 		"name":"Cherys",
 		"photo":"https://scontent.flnk1-1.fna.fbcdn.net/v/t1.0-1/p160x160/23132041_10156598896543943_3605692811880937780_n.jpg?oh=bd2a7f70d7ad337077bc2fb03b853793&oe=5AC02F2A",
@@ -18,5 +20,5 @@ var friendsArray = [
 ];
 
 
-
-module.exports = friendsArray;
+//array is exported, making it accessible to other files 
+module.exports = friends;
